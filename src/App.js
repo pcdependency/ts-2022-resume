@@ -59,7 +59,7 @@ const links = [
   {
     name: "Diploma",
     href: "https://www.purdueglobal.edu/",
-    icon: PurdueIcon,
+    img: PurdueIcon,
     popover: "Currently Unavailable: Diploma will be available in 4 - 6 weeks.",
     secure: true,
   },
@@ -80,7 +80,7 @@ const links = [
   {
     name: "fullStack app",
     href: "https://videostreamapplication.herokuapp.com/",
-    icon: VideoAppIcon,
+    img: VideoAppIcon,
     popover:
       "In Development: Full Video Streaming & Social Media Service Web-App: Video and image transcoding, compression and streaming in 6 resolutions. All the common social media functionalities. Semi Production level optimization.",
     secure: false,
