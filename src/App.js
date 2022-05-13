@@ -60,14 +60,15 @@ const links = [
     name: "Diploma",
     href: "https://www.purdueglobal.edu/",
     img: PurdueIcon,
-    popover: "Currently Unavailable: Diploma will be available in 4 - 6 weeks.",
+    popover: "Diploma will be available in 4 - 6 weeks.",
     secure: true,
   },
   {
     name: "graphic portfolio",
     href: "https://forgottendesigns.netlify.app/",
     img: ForgottenIcon,
-    popover: "Graphic Renders I made for previous clients and my web portfolio",
+    popover:
+      "Freelance Graphic Renders I made for previous clients and my web portfolio",
     secure: false,
   },
   {
@@ -82,7 +83,7 @@ const links = [
     href: "https://videostreamapplication.herokuapp.com/",
     img: VideoAppIcon,
     popover:
-      "In Development: Full Video Streaming & Social Media Service Web-App: Video and image transcoding, compression and streaming in 6 resolutions. All the common social media functionalities. Semi Production level optimization.",
+      "In Development: Full Video Streaming & Social Media Service Web-App: Video and image transcoding, compression and streaming in 6 resolutions. All the common social media functionalities. Semi Production level optimization. Want to try? Use Email: test@test.com and Password: TEst12!@",
     secure: false,
   },
   {
