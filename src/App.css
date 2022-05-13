@@ -1,0 +1,391 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  font-size: 100%;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  flex-shrink: 0;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden !important;
+  background-color: black;
+}
+
+div {
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+
+.appContainer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url(./img/woodbg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+.bgElementsLayerContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  user-select: none;
+  touch-action: none;
+  pointer-events: none;
+}
+
+.plant,
+.phone {
+  position: absolute;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.plant {
+  transform-origin: center;
+  transform: translate(-80vh, -450px);
+  max-height: 1400px;
+  height: 90vh;
+  width: 90vh;
+  background-image: url(./img/tablePlant.png);
+  filter: drop-shadow(50px 100px 80px rgba(0, 0, 0, 0.8)) grayscale(0.3)
+    brightness(0.8);
+}
+
+.phone {
+  transform-origin: center;
+  transform: translate(70vh, 300px) rotate(15deg);
+  max-height: 700px;
+  max-width: 700px;
+  height: 40vh;
+  width: 40vh;
+  background-image: url(./img/phone2.png);
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 1)) grayscale(0.3)
+    brightness(0.8);
+}
+
+/* ------------------------------------------------------------------------- */
+
+.fgElementsLayerContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resumeContainer {
+  height: 95%;
+  aspect-ratio: 3/4;
+  background-image: url(./img/file.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.2vh;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 1));
+  display: grid;
+  grid-template-areas:
+    "bar bar"
+    "title title"
+    "links links"
+    "bio info"
+    "exp info"
+    "exp skills"
+    "exp skills";
+  grid-template-rows: 1fr 2fr 2fr 3fr 4fr 5fr 5fr;
+  grid-template-columns: 7fr 4fr;
+}
+
+/* ---------------------------------------------- */
+
+.notePadBar {
+  grid-area: bar;
+  background-image: url(./img/fileBlack.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.resumeTitleContainer {
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 2vh !important;
+  margin-bottom: 1vh !important;
+  text-align: center;
+}
+
+.resumeTitleContainer > p {
+  font-size: 6vh;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1vh;
+}
+
+.titleDivider {
+  height: 0.2vh;
+  width: 100%;
+  background-color: black;
+  border-radius: 5px;
+}
+
+/* ---------------------------------------------- */
+
+.linksContainer {
+  grid-area: links;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1vh;
+  padding: 0 2vh !important;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 1vh !important;
+}
+
+.linkContainer {
+  background-color: rgba(200, 200, 200, 0.5);
+  border-radius: 0.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.5vh !important;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.linkContainer > p {
+  font-size: 1.5vh;
+}
+
+.linkContainer > p::first-letter {
+  text-transform: uppercase;
+}
+
+.linkContainer > img {
+  object-fit: contain;
+  height: 3vh;
+  width: 3vh;
+}
+
+.linkContainer > svg {
+  height: 3vh;
+  width: 3vh;
+}
+
+/* ---------------------------------------------- */
+
+.bioContainer {
+  grid-area: bio;
+  padding: 1vh 1vh 1vh 0 !important;
+  margin-left: 2vh !important;
+  user-select: none;
+  touch-action: none;
+  pointer-events: none;
+}
+
+.ppContainer {
+  height: 10vh;
+  width: 10vh;
+  border-radius: 50%;
+  margin-right: 2vh !important;
+  shape-outside: circle(50%);
+  float: left;
+  border: 0.3vh solid black;
+  background-color: black;
+}
+
+.bioContainer > .ppContainer > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1.1) translateX(5px);
+}
+
+.bioContainer > p {
+  font-size: 1.25vh;
+  line-height: 1.35;
+}
+
+/* ---------------------------------------------- */
+
+.experiencesContainer {
+  grid-area: exp;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll !important;
+  margin-left: 2vh !important;
+  margin-right: 1vh !important;
+}
+
+.titleContainer {
+  width: 100%;
+  border-radius: 0.5vh 0.5vh 0 0;
+  background-image: url(./img/fileBlack.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5vh !important;
+}
+
+.experienceContainer {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin-bottom: 2vh !important;
+}
+
+.titleContainer > p {
+  color: white;
+  font-size: 1.3vh;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5vh;
+}
+
+.bodyContainer {
+  padding: 1vh !important;
+  border-radius: 0 0 0.5vh 0.5vh;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+.experienceContainer > .bodyContainer > p {
+  font-size: 1.2vh;
+}
+
+.experienceIconsContainer {
+  padding: 0.5vh !important;
+  background-color: rgba(160, 160, 160, 0.5);
+  border-radius: 0.5vh;
+  display: flex;
+  gap: 2vh;
+}
+
+.experienceIconsContainer > img {
+  height: 3vh;
+  width: 3vh;
+  object-fit: contain;
+  margin-right: 2vh !important;
+}
+
+/* ---------------------------------------------- */
+
+.informationContainer {
+  grid-area: info;
+  margin-right: 2vh !important;
+  text-align: center;
+  background-color: rgba(200, 200, 200, 0.5);
+  border-radius: 0.5vh;
+  margin-bottom: 1vh !important;
+}
+
+.infoContainer {
+  margin-bottom: 1vh !important;
+}
+
+.informationContainer > .bodyContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  background-color: rgba(200, 200, 200, 0);
+}
+
+.informationContainer > .bodyContainer > .infoContainer > p {
+  font-size: 1.25vh;
+}
+
+.infoContainer > p:nth-of-type(1) {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.infoContainer > p:nth-of-type(1)::first-letter {
+  text-transform: uppercase;
+}
+
+.r > p {
+  font-size: 1.5vh;
+  margin: 1vh 0 !important;
+}
+
+.r > p:nth-of-type(2) {
+  font-size: 1.2vh;
+}
+
+/* ---------------------------------------------- */
+
+.skillsSection {
+  grid-area: skills;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 2vh 2vh 0 !important;
+  background-color: rgba(200, 200, 200, 0.5);
+  border-radius: 0.5vh;
+}
+
+.skillsSection > .topContainer > .bodyContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(200, 200, 200, 0);
+}
+
+.skillContainer {
+  margin-bottom: 1.5vh !important;
+}
+
+.skillContainer > p {
+  font-size: 1.2vh;
+  margin-bottom: 0.25vh !important;
+}
+
+.skillsControls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5vh !important;
+}
+
+@media screen and (max-width: 900px) {
+  .resumeContainer {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    filter: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    column-gap: 0;
+    overflow-y: scroll !important;
+  }
+
+  .experiencesContainer,
+  .informationContainer,
+  .skillsSection {
+    margin: 1vh !important;
+    overflow-y: hidden !important;
+    padding-bottom: 0 !important;
+  }
+
+  .notePadBar {
+    height: 4vh;
+    flex-shrink: 0;
+  }
+}
