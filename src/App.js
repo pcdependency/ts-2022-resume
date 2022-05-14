@@ -74,7 +74,7 @@ const links = [
   },
   {
     name: "github",
-    href: "https://registry.jsonresume.org/pcdependency",
+    href: "https://github.com/pcdependency",
     img: GithubIcon,
     popover: "My GitHub",
     secure: true,
