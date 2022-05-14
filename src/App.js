@@ -3,7 +3,9 @@ import "./App.css";
 import { useParams } from "react-router-dom";
 import { SvgIcon } from "@mui/material";
 import LinearProgress from "@mui/material/LinearProgress";
+import WorkHistoryIcon from "@mui/icons-material/WorkHistory";
 import EmailIcon from "@mui/icons-material/Email";
+import WebAssetIcon from "@mui/icons-material/WebAsset";
 import PhoneIcon from "@mui/icons-material/Phone";
 import WebIcon from "@mui/icons-material/Web";
 import VideoAppIcon from "./img/videoapp.png";
@@ -22,6 +24,7 @@ import PhotoshopIcon from "./img/ps.png";
 import AfterEffectsIcon from "./img/ae.png";
 import C4DIcon from "./img/c4d.png";
 import ZBrushIcon from "./img/zb.png";
+import GithubIcon from "./img/github.png";
 import MarvelousDesignerIcon from "./img/md.jpg";
 import ExcelIcon from "./img/excel.png";
 import SAPIcon from "./img/sap.png";
@@ -31,7 +34,6 @@ import PurdueIcon from "./img/purdue.png";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import Popover from "@mui/material/Popover";
-
 const ColorButton = styled(Button)(() => ({
   color: "black",
   padding: ".5vh 2vh !important",
@@ -64,7 +66,21 @@ const links = [
     secure: true,
   },
   {
-    name: "graphic portfolio",
+    name: "JSON CV",
+    href: "https://registry.jsonresume.org/pcdependency",
+    icon: WorkHistoryIcon,
+    popover: "JSON version is available on my GitHub",
+    secure: true,
+  },
+  {
+    name: "github",
+    href: "https://registry.jsonresume.org/pcdependency",
+    img: GithubIcon,
+    popover: "My GitHub",
+    secure: true,
+  },
+  {
+    name: "Graphics",
     href: "https://forgottendesigns.netlify.app/",
     img: ForgottenIcon,
     popover:
@@ -74,12 +90,12 @@ const links = [
   {
     name: "3D app",
     href: "https://forgottencity.netlify.app/",
-    icon: WebIcon,
+    icon: WebAssetIcon,
     popover: "Fully 3D Interactive Three.js Website",
     secure: false,
   },
   {
-    name: "fullStack app",
+    name: "Full-stack",
     href: "https://videostreamapplication.herokuapp.com/",
     img: VideoAppIcon,
     popover:
@@ -87,7 +103,7 @@ const links = [
     secure: false,
   },
   {
-    name: "complex frontend",
+    name: "Front-end",
     href: "",
     icon: WebIcon,
     popover: "Currently Down: Completely unique custom website interface",
@@ -142,7 +158,7 @@ const information = [
   },
   {
     name: "phone",
-    info: "303-881-2282",
+    info: "(303) 881-2282",
   },
   {
     name: "email",

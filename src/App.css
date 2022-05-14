@@ -103,7 +103,7 @@ div {
     "exp info"
     "exp skills"
     "exp skills";
-  grid-template-rows: 1fr 2fr 2fr 3fr 4fr 5fr 5fr;
+  grid-template-rows: 1fr 2fr 1.7fr 3fr 4fr 5fr 5fr;
   grid-template-columns: 7fr 4fr;
 }
 
@@ -148,9 +148,9 @@ div {
   grid-area: links;
   display: grid;
   grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
   gap: 1vh;
   padding: 0 2vh !important;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   margin-bottom: 1vh !important;
 }
 
@@ -162,13 +162,13 @@ div {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 0.5vh !important;
   cursor: pointer;
   text-decoration: none;
+  padding: 0.5vh !important;
 }
 
 .linkContainer > p {
-  font-size: 1.5vh;
+  font-size: 1vh;
 }
 
 .linkContainer > p::first-letter {
@@ -212,7 +212,7 @@ div {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  transform: scale(1.1) translateX(5px);
+  transform: scale(1);
 }
 
 .bioContainer > p {
