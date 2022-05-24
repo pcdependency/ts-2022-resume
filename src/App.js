@@ -104,9 +104,10 @@ const links = [
   },
   {
     name: "Front-end",
-    href: "",
+    href: "https://mt-lorem-restaurant.netlify.app/",
     icon: WebIcon,
-    popover: "Currently Down: Completely unique custom website interface",
+    popover:
+      "In Development: Unique custom website interface with parallax and 3D menu system.",
     secure: false,
   },
 ];
