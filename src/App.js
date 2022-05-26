@@ -10,7 +10,6 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import WebIcon from "@mui/icons-material/Web";
 import VideoAppIcon from "./img/videoapp.png";
 import ForgottenIcon from "./img/forgotten.png";
-import ProfilePicture from "./img/pp.jpg";
 import ThreeIcon from "./img/three.png";
 import ReactIcon from "./img/react.png";
 import CSSIcon from "./img/css.png";
