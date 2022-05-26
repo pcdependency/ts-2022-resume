@@ -66,17 +66,17 @@ const links = [
     secure: true,
   },
   {
-    name: "JSON CV",
+    name: "History",
     href: "https://registry.jsonresume.org/pcdependency",
     icon: WorkHistoryIcon,
-    popover: "JSON version is available on my GitHub",
+    popover: "My Work and Education History.",
     secure: true,
   },
   {
     name: "github",
     href: "https://github.com/pcdependency",
     img: GithubIcon,
-    popover: "My GitHub",
+    popover: "My GitHub: Check out the code for my projects.",
     secure: true,
   },
   {
@@ -84,14 +84,14 @@ const links = [
     href: "https://forgottendesigns.netlify.app/",
     img: ForgottenIcon,
     popover:
-      "Freelance Graphic Renders I made for previous clients and my web portfolio",
+      "Freelance Graphic Renders I made for previous clients and my web portfolio.",
     secure: false,
   },
   {
     name: "3D app",
     href: "https://forgottencity.netlify.app/",
     icon: WebAssetIcon,
-    popover: "Fully 3D Interactive Three.js Website",
+    popover: "Fully 3D Interactive Three.js Website.",
     secure: false,
   },
   {
@@ -150,12 +150,8 @@ const information = [
     info: "Tyler Steele",
   },
   {
-    name: "age",
-    info: "23",
-  },
-  {
     name: "location",
-    info: "Brighton, CO 80601",
+    info: "Colorado",
   },
   {
     name: "phone",
@@ -351,6 +347,11 @@ const pages = {
   ],
 };
 
+const bioLinks = [
+  "https://registry.jsonresume.org/pcdependency",
+  "https://github.com/pcdependency?tab=repositories",
+];
+
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
   return {
@@ -470,24 +471,24 @@ function App() {
             })}
           </div>
           <div className="bioContainer">
-            <div className="ppContainer">
-              <img
-                src={ProfilePicture}
-                alt=""
-                style={{ filter: r === "r" ? "blur(7px)" : "" }}
-              />
-            </div>
             <p>
-              Hello, I am{" "}
-              {r !== "r" ? (
-                <b>Tyler, 23, and from Brighton, Colorado</b>
-              ) : (
-                <b>Tyler</b>
-              )}
-              . I am experienced in <b>full stack web development</b> and
-              digital-art. I graduated May 2022 with a<b> bachelors in IT</b> at
-              Purdue Global and am now interested in a Web Developer internship
-              or position. Feel free to check out my work thats linked above.
+              Hello, I am <b>Tyler from Colorado</b>. I am experienced in
+              <b> full stack web development</b> and digital-art. I graduated
+              May 2022 with a<b> bachelors in IT</b> at Purdue Global and am now
+              interested in a Web Developer internship or position. Feel free to
+              check out my{" "}
+              <a href={bioLinks[0]} target="_blank" rel="noreferrer">
+                professional
+              </a>
+              ,{" "}
+              <a href={bioLinks[0]} target="_blank" rel="noreferrer">
+                education
+              </a>{" "}
+              and{" "}
+              <a href={bioLinks[1]} target="_blank" rel="noreferrer">
+                project
+              </a>{" "}
+              history linked above.
             </p>
           </div>
           <div className="experiencesContainer">
@@ -537,7 +538,12 @@ function App() {
           <div className="skillsSection">
             <div className="topContainer">
               <div className="titleContainer">
-                <p>{Object.keys(pages)[page]}</p>
+                <p>
+                  {Object.keys(pages)[page]}
+                  <span className="skillPageTxt">
+                    {page + 1}/{Object.keys(pages).length}
+                  </span>
+                </p>
               </div>
               <div className="bodyContainer">
                 {pages[Object.keys(pages)[page]].map((s) => {

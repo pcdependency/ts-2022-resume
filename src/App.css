@@ -6,6 +6,12 @@
   color: black;
   font-family: "Roboto", sans-serif;
   flex-shrink: 0;
+  min-height: 0;
+  min-width: 0;
+}
+
+a {
+  cursor: pointer;
 }
 
 #root {
@@ -192,32 +198,16 @@ div {
   grid-area: bio;
   padding: 1vh 1vh 1vh 0 !important;
   margin-left: 2vh !important;
-  user-select: none;
-  touch-action: none;
-  pointer-events: none;
-}
-
-.ppContainer {
-  height: 10vh;
-  width: 10vh;
-  border-radius: 50%;
-  margin-right: 2vh !important;
-  shape-outside: circle(50%);
-  float: left;
-  border: 0.3vh solid black;
-  background-color: black;
-}
-
-.bioContainer > .ppContainer > img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  transform: scale(1);
 }
 
 .bioContainer > p {
-  font-size: 1.25vh;
+  font-size: 1.5vh;
   line-height: 1.35;
+}
+
+.bioContainer > p > a {
+  color: rgb(30, 80, 220);
+  font-weight: bold;
 }
 
 /* ---------------------------------------------- */
@@ -296,7 +286,7 @@ div {
 }
 
 .infoContainer {
-  margin-bottom: 1vh !important;
+  margin-bottom: 2vh !important;
 }
 
 .informationContainer > .bodyContainer {
@@ -354,6 +344,13 @@ div {
 .skillContainer > p {
   font-size: 1.2vh;
   margin-bottom: 0.25vh !important;
+}
+
+.skillPageTxt {
+  color: white;
+  font-size: 1vh;
+  margin-left: 1vw !important;
+  font-weight: 200;
 }
 
 .skillsControls {
