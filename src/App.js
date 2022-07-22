@@ -66,7 +66,7 @@ const links = [
   },
   {
     name: "History",
-    href: "https://registry.jsonresume.org/pcdependency",
+    href: "https://ts-2022-jsonresume.netlify.app",
     icon: WorkHistoryIcon,
     popover: "My Work and Education History.",
     secure: true,
