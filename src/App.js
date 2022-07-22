@@ -474,8 +474,7 @@ function App() {
               Hello, I am <b>Tyler from Colorado</b>. I am experienced in
               <b> full stack web development</b> and digital-art. I graduated
               May 2022 with a<b> bachelors in IT</b> at Purdue Global and am now
-              interested in a Web Developer internship or position. Feel free to
-              check out my{" "}
+              interested in a Web Developer position. Feel free to check out my{" "}
               <a href={bioLinks[0]} target="_blank" rel="noreferrer">
                 professional
               </a>
