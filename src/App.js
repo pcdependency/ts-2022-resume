@@ -350,7 +350,7 @@ const pages = {
       level: 100,
     },
     {
-      name: "Typescript",
+      name: "TypeScript",
       level: 100,
     },
     {
@@ -373,7 +373,7 @@ const pages = {
 };
 
 const bioLinks = [
-  "https://registry.jsonresume.org/pcdependency",
+  "https://ts-2022-jsonresume.netlify.app/",
   "https://github.com/pcdependency?tab=repositories",
 ];
 
@@ -609,8 +609,8 @@ function App() {
       </div>
       {width > 720 && (
         <div className="bgElementsLayerContainer">
-          <div className="phone"></div>
-          <div className="plant"></div>
+          <div className="phone" />
+          <div className="plant" />
         </div>
       )}
     </div>
