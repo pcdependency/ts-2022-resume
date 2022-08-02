@@ -61,7 +61,7 @@ const links = [
     name: "Diploma",
     href: "https://www.purdueglobal.edu/",
     img: PurdueIcon,
-    popover: "Diploma will be available in 4 - 6 weeks.",
+    popover: "Bachelors in IT",
     secure: true,
   },
   {
@@ -95,10 +95,9 @@ const links = [
   },
   {
     name: "Full-stack",
-    href: "https://videostreamapplication.herokuapp.com/",
+    href: "https://github.com/pcdependency/videoapp",
     img: VideoAppIcon,
-    popover:
-      "In Development: Full Video Streaming & Social Media Service Web-App: Video and image transcoding, compression and streaming in 6 resolutions. All the common social media functionalities. Semi Production level optimization. Want to try? Use Email: test@test.com and Password: TEst12!@",
+    popover: "MERN Youtube Clone",
     secure: false,
   },
   {
@@ -216,7 +215,7 @@ const pages = {
       level: 90,
     },
     {
-      name: "Node",
+      name: "NodeJS",
       level: 95,
     },
     {
@@ -342,6 +341,33 @@ const pages = {
     {
       name: "Cinema 4D, Octane, VRay",
       level: 70,
+    },
+  ],
+
+  learning: [
+    {
+      name: "Type-GraphQL",
+      level: 100,
+    },
+    {
+      name: "Typescript",
+      level: 100,
+    },
+    {
+      name: "TypeORM",
+      level: 100,
+    },
+    {
+      name: "PostgreSQL",
+      level: 100,
+    },
+    {
+      name: "Apollo Client",
+      level: 100,
+    },
+    {
+      name: "Jest",
+      level: 100,
     },
   ],
 };
