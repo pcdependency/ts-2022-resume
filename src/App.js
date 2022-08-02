@@ -346,28 +346,32 @@ const pages = {
 
   learning: [
     {
+      name: "Next.js",
+      level: 25,
+    },
+    {
       name: "Type-GraphQL",
-      level: 100,
+      level: 25,
     },
     {
       name: "TypeScript",
-      level: 100,
+      level: 25,
     },
     {
       name: "TypeORM",
-      level: 100,
+      level: 25,
     },
     {
       name: "PostgreSQL",
-      level: 100,
+      level: 25,
     },
     {
       name: "Apollo Client",
-      level: 100,
+      level: 25,
     },
     {
       name: "Jest",
-      level: 100,
+      level: 25,
     },
   ],
 };
