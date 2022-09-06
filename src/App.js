@@ -342,6 +342,10 @@ const pages = {
       name: "Cinema 4D, Octane, VRay",
       level: 70,
     },
+    {
+      name: "SAP",
+      level: 90,
+    },
   ],
 
   learning: [
@@ -503,8 +507,8 @@ function App() {
             <p>
               Hello, I am <b>Tyler from Colorado</b>. I am experienced in
               <b> full stack web development</b> and digital-art. I graduated
-              May 2022 with a<b> bachelors in IT</b> at Purdue Global and am now
-              interested in a Web Developer position. Feel free to check out my{" "}
+              May 2022 with a<b> bachelors in IT</b> at Purdue University and am now
+              interested in employment. Feel free to check out my{" "}
               <a href={bioLinks[0]} target="_blank" rel="noreferrer">
                 professional
               </a>
