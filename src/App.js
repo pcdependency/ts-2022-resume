@@ -141,7 +141,7 @@ const experience = [
 const information = [
   {
     name: "title",
-    info: "MERN Full Stack Web Developer and Graphic Designer",
+    info: "IT Technician & MERN Full Stack Web developer",
   },
   {
     name: "name",
@@ -505,10 +505,10 @@ function App() {
           </div>
           <div className="bioContainer">
             <p>
-              Hello, I am <b>Tyler from Colorado</b>. I am experienced in
-              <b> full stack web development</b> and digital-art. I graduated
-              May 2022 with a<b> bachelors in IT</b> at Purdue University and am now
-              interested in employment. Feel free to check out my{" "}
+              <b>IT Technician, MERN Full Stack Web developer</b> and Digital
+              Artist. <b> Bachelors in IT</b> at Purdue University and am
+              interested in employment and career development. Feel free to
+              check out my{" "}
               <a href={bioLinks[0]} target="_blank" rel="noreferrer">
                 professional
               </a>
