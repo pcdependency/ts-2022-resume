@@ -576,15 +576,15 @@ function App() {
                   </span>
                 </p>
               </div>
-              <ul className="bodyContainer">
+              <div className="bodyContainer">
                 {pages[Object.keys(pages)[page]].map((s, i, a) => {
                   return (
-                    <li key={i} className="listItem">
+                    <p key={i} className="listItem">
                       - {s.name}
-                    </li>
+                    </p>
                   );
                 })}
-              </ul>
+              </div>
             </div>
             <div className="skillsControls">
               <ColorButton
