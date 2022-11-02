@@ -255,6 +255,10 @@ div {
   background-color: rgba(200, 200, 200, 0.5);
 }
 
+.listItem {
+  margin-bottom: 10px !important;
+}
+
 .experienceContainer > .bodyContainer > p {
   font-size: 1.2vh;
 }

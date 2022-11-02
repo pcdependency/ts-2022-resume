@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import { useParams } from "react-router-dom";
 import { SvgIcon } from "@mui/material";
-import LinearProgress from "@mui/material/LinearProgress";
 import WorkHistoryIcon from "@mui/icons-material/WorkHistory";
 import EmailIcon from "@mui/icons-material/Email";
 import WebAssetIcon from "@mui/icons-material/WebAsset";
@@ -577,26 +576,15 @@ function App() {
                   </span>
                 </p>
               </div>
-              <div className="bodyContainer">
-                {pages[Object.keys(pages)[page]].map((s) => {
+              <ul className="bodyContainer">
+                {pages[Object.keys(pages)[page]].map((s, i, a) => {
                   return (
-                    <div className="skillContainer" key={s.name}>
-                      <p>{s.name}</p>
-                      <LinearProgress
-                        variant="determinate"
-                        value={s.level}
-                        sx={{
-                          backgroundColor: "rgb(160,160,160)",
-                          height: ".4vh",
-                          "& .MuiLinearProgress-barColorPrimary": {
-                            backgroundColor: "black",
-                          },
-                        }}
-                      />
-                    </div>
+                    <li key={i} className="listItem">
+                      - {s.name}
+                    </li>
                   );
                 })}
-              </div>
+              </ul>
             </div>
             <div className="skillsControls">
               <ColorButton
